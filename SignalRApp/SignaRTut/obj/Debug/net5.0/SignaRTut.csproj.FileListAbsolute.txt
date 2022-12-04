@@ -116,3 +116,4 @@ C:\source\Csharp\IntroToSignalRInCsharpUsingBlazorWPF\SignalRApp\SignaRTut\obj\D
 C:\source\Csharp\IntroToSignalRInCsharpUsingBlazorWPF\SignalRApp\SignaRTut\obj\Debug\net5.0\ref\SignaRTut.dll
 C:\source\Csharp\IntroToSignalRInCsharpUsingBlazorWPF\SignalRApp\SignaRTut\obj\Debug\net5.0\Razor\Views\index.cshtml.g.cs
 C:\source\Csharp\IntroToSignalRInCsharpUsingBlazorWPF\SignalRApp\SignaRTut\obj\Debug\net5.0\Razor\Views\Server\Index.cshtml.g.cs
+C:\source\Csharp\IntroToSignalRInCsharpUsingBlazorWPF\SignalRApp\SignaRTut\obj\Debug\net5.0\Razor\Views\Client\Index.cshtml.g.cs

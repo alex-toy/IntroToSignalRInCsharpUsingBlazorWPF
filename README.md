@@ -41,4 +41,18 @@ Do the same for the client
 <img src="/pictures/client_view.png" title="client view"  width="500"> 
 
 
+## Add Javascript Library
+
+Right-click to *wwwroot/js* in *SignalTut* and click *Add New Item*
+
+<img src="/pictures/javascript_library.png" title="javascript library"  width="600"> 
+
+
+## Start the project
+
+Now the client receives the messages sent from the server
+
+<img src="/pictures/messages.png" title="messages"  width="600"> 
+
+
 
