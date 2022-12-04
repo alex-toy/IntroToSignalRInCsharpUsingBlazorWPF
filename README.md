@@ -67,6 +67,19 @@ Now the client receives the messages sent from the server
 
 ## BlazorRealTime
 
+### Add Nuget Packages Server side
+```
+Microsoft.AspNetCore.SignalR
+```
+
+### Add Nuget Packages Client side
+```
+Microsoft.AspNetCore.SignalR.Client
+```
+
+
+
+
 
 
 

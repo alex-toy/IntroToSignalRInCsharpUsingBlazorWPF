@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pzt5D1f18bbx4npuqY0t+Vw+rZqahKcFXNxTsYim7uM=",
+  "Source": "BlazorRealTime.Server",
+  "BasePath": "_content/BlazorRealTime.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

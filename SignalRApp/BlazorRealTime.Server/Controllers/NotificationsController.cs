@@ -1,83 +1,25 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BlazorRealTime.Server.Hubs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace BlazorRealTime.Server.Controllers
 {
+	[Route("/api/[controller]")]
+	[ApiController]
 	public class NotificationsController : Controller
 	{
-		// GET: NotificationsController
-		public ActionResult Index()
+		private readonly IHubContext<NotificationHub> _hubContext;
+
+		public NotificationsController(IHubContext<NotificationHub> hubContext)
 		{
-			return View();
+			_hubContext = hubContext;
 		}
 
-		// GET: NotificationsController/Details/5
-		public ActionResult Details(int id)
+		[HttpPost("send")]
+		public async Task<IActionResult> Post([FromQuery] string title)
 		{
-			return View();
-		}
-
-		// GET: NotificationsController/Create
-		public ActionResult Create()
-		{
-			return View();
-		}
-
-		// POST: NotificationsController/Create
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Create(IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
-		}
-
-		// GET: NotificationsController/Edit/5
-		public ActionResult Edit(int id)
-		{
-			return View();
-		}
-
-		// POST: NotificationsController/Edit/5
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Edit(int id, IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
-		}
-
-		// GET: NotificationsController/Delete/5
-		public ActionResult Delete(int id)
-		{
-			return View();
-		}
-
-		// POST: NotificationsController/Delete/5
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Delete(int id, IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
+			await _hubContext.Clients.All.SendAsync("notification", $"{DateTime.Now} : {title}");
+			return Ok("Notification sent with success.");
 		}
 	}
 }
