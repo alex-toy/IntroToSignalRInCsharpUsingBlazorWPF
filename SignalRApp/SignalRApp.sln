@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignaRTut", "SignaRTut\SignaRTut.csproj", "{79E12658-234D-4560-867C-5D49A4097BE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignaRTut", "SignaRTut\SignaRTut.csproj", "{79E12658-234D-4560-867C-5D49A4097BE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{AE540231-F1A7-462E-A6BA-DE601158F655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatApp", "ChatApp\ChatApp.csproj", "{081378A9-6908-459F-8AB3-BB1A540E4278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{79E12658-234D-4560-867C-5D49A4097BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79E12658-234D-4560-867C-5D49A4097BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79E12658-234D-4560-867C-5D49A4097BE4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE540231-F1A7-462E-A6BA-DE601158F655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE540231-F1A7-462E-A6BA-DE601158F655}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE540231-F1A7-462E-A6BA-DE601158F655}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE540231-F1A7-462E-A6BA-DE601158F655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081378A9-6908-459F-8AB3-BB1A540E4278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081378A9-6908-459F-8AB3-BB1A540E4278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081378A9-6908-459F-8AB3-BB1A540E4278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081378A9-6908-459F-8AB3-BB1A540E4278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

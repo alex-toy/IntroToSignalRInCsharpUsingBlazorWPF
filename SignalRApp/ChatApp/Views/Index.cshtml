@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ChatApp.Models.Message>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Home/Index.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.When)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sender)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var message in Model.OrderBy(m => m.When)) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => message.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => message.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => message.When)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => message.Sender.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@message.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@message.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@message.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
