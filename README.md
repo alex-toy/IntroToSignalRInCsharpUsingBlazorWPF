@@ -20,4 +20,13 @@ Right-click to *SignalRTut* and add a client side library
 <img src="/pictures/client_side_library.png" title="client side library"  width="400"> 
 
 
+## Add Empty controllers
+
+Right-click to *controller* in *SignalTut* and add an empty controller called *ServerController*
+
+<img src="/pictures/empty_controller.png" title="empty controller"  width="400"> 
+
+Repeat above for *ClientController*
+
+
 
