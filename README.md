@@ -24,9 +24,17 @@ Right-click to *SignalRTut* and add a client side library
 
 Right-click to *controller* in *SignalTut* and add an empty controller called *ServerController*
 
-<img src="/pictures/empty_controller.png" title="empty controller"  width="400"> 
+<img src="/pictures/empty_controller.png" title="empty controller"  width="500"> 
 
 Repeat above for *ClientController*
+
+
+## Add Views
+
+Right-click to *Views/server* in *SignalTut* and add a *Notification Create View* for the *ServerController*
+
+<img src="/pictures/create_view.png" title="create_view"  width="500"> 
+<img src="/pictures/create_view1.png" title="create_view"  width="500"> 
 
 
 
